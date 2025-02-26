@@ -227,7 +227,7 @@ a,
 button,
 .logo-item,
 .feature-card {
-  cursor: none;
+  cursor: default !important;
 }
 
 a {
@@ -1096,7 +1096,7 @@ p {
   transform-style: preserve-3d;
   position: relative;
   z-index: 2;
-  cursor: none;
+  cursor: default !important;
 }
 
 .feature-card:hover {
