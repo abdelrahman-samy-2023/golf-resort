@@ -10,7 +10,11 @@ const ThemeManager = {
         this.toggleCircle = this.themeToggle?.querySelector('.toggle-circle');
 
         // Get saved theme from localStorage or use dark as default
-        const savedTheme = localStorage.getItem('theme') || 'dark';
+        const savedTheme = localStorage.getItem('theme') || 'light';
+
+        if (savedTheme !== 'light') {
+            this.applyTheme(savedTheme);
+        }
 
         // Apply the saved theme immediately when page loads
         this.applyTheme(savedTheme);
@@ -277,20 +281,20 @@ const AnimationManager = {
 
     initGSAPAnimations() {
         // Header animations
-        gsap.from('.header-content', {
-            duration: 1,
-            y: 50,
-            opacity: 0,
-            ease: 'power3.out'
-        });
+        // gsap.from('.header-content', {
+        //     duration: 1,
+        //     y: 50,
+        //     opacity: 0,
+        //     ease: 'power3.out'
+        // });
 
-        gsap.from('.header-image', {
-            duration: 1,
-            x: 50,
-            opacity: 0,
-            delay: 0.3,
-            ease: 'power3.out'
-        });
+        // gsap.from('.header-image', {
+        //     duration: 1,
+        //     x: 50,
+        //     opacity: 0,
+        //     delay: 0.3,
+        //     ease: 'power3.out'
+        // });
 
         // Decorative elements animations
         gsap.to('.dots-1', {

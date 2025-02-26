@@ -214,7 +214,7 @@ textarea {
 body {
   font-family: var(--font-primary);
   line-height: var(--line-height);
-  cursor: none;
+  cursor: default !important;
 }
 
 /* Reset Elements */
@@ -227,7 +227,7 @@ a,
 button,
 .logo-item,
 .feature-card {
-  cursor: none;
+  cursor: pointer;
 }
 
 a {
@@ -261,7 +261,7 @@ a {
 /* ==========================================
    Custom Cursor
    ========================================== */
-.custom-cursor {
+/* .custom-cursor {
   display: none;
   position: fixed;
   width: 20px;
@@ -269,12 +269,12 @@ a {
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
-}
+} */
 
 @media (hover: hover) {
-  .custom-cursor {
+  /* .custom-cursor {
     display: block;
-  }
+  } */
 
   body {
     cursor: none;
@@ -312,7 +312,7 @@ a {
   transition: all 0.2s ease;
 }
 
-/* Cursor Hover Effects */
+/* Cursor Hover Effects
 a:hover~.custom-cursor .cursor-glow,
 button:hover~.custom-cursor .cursor-glow,
 .logo-item:hover~.custom-cursor .cursor-glow,
@@ -320,6 +320,13 @@ button:hover~.custom-cursor .cursor-glow,
   width: 60px;
   height: 60px;
   opacity: 0.4;
+} */
+
+.clickable,
+button,
+a,
+input[type="submit"] {
+  cursor: pointer !important;
 }
 
 /* =================== */
@@ -874,7 +881,7 @@ p {
 }
 
 /* Decorative Elements */
-.decorative-dots {
+/* .decorative-dots {
   position: absolute;
   width: 150px;
   height: 150px;
@@ -882,7 +889,7 @@ p {
   background-size: 20px 20px;
   opacity: 1;
   z-index: -1;
-}
+} */
 
 .dots-1 {
   top: 20%;
