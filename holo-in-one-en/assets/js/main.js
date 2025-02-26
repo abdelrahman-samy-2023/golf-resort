@@ -336,7 +336,7 @@ const AnimationManager = {
  */
 const CursorManager = {
     init() {
-        this.cursor = document.querySelector('.custom-cursor');
+        // this.cursor = document.querySelector('.custom-cursor');
 
         // Only initialize if cursor element exists and device supports hover
         if (this.cursor && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
