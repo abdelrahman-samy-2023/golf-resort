@@ -1,3 +1,14 @@
+<!-- 
+==================================================
+Golf Resort Website Project - Student Guide
+==================================================
+1. This is a basic HTML file for a golf resort website
+2. Code is organized with clear comments
+3. You can change colors and fonts in the CSS file
+4. Website supports both English and Arabic languages
+================================================== 
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -65,23 +76,6 @@
 </head>
 
 <body data-scroll-container data-theme="light">
-    <!-- Floating Language Switch -->
-    <div class="floating-lang-switch">
-        <button class="floating-lang-btn" aria-label="Switch Language">
-            <div class="lang-icon">
-                <i class="fas fa-globe"></i>
-            </div>
-            <div class="lang-text">
-                <span class="target">AR</span>
-                <span class="divider">/</span>
-                <span class="current">EN</span>
-            </div>
-        </button>
-    </div>
-
-    <!-- Custom Cursor -->
-    <!--  -->
-
     <!-- 
     ================================================== 
     Main Content
@@ -308,64 +302,43 @@
     <section id="gallery" class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Image Gallery</span>
-                <h2>Resort Tour</h2>
-                <p class="subtitle">Explore our facilities and courts through this photo tour</p>
+                <span class="section-badge">Photo Gallery</span>
+                <h2>Explore Our Resort</h2>
+                <p class="subtitle">Take a visual tour and discover our world-class facilities and golf courses.</p>
             </div>
 
-            <!-- Swiper Gallery -->
-            <div class="swiper gallery-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/golf-1.jpg" alt="Sea View Golf Course">
-                            <div class="gallery-overlay">
-                                <h3>Sea View Golf Course</h3>
-                                <p>One of the most beautiful golf courses overlooking the sea</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/golf-2.jpg" alt="Oasis Golf Course">
-                            <div class="gallery-overlay">
-                                <h3>Oasis Golf Course</h3>
-                                <p>A world-class course surrounded by stunning natural scenery</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/academy.jpg" alt="Training Academy">
-                            <div class="gallery-overlay">
-                                <h3>Training Academy</h3>
-                                <p>An integrated training center with the latest technologies and equipment</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/hotel.jpg" alt="Luxury Accommodation">
-                            <div class="gallery-overlay">
-                                <h3>Luxury Accommodation</h3>
-                                <p>Elegant rooms and suites with stunning views of the courts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/restaurant.jpg" alt="Main Restaurant">
-                            <div class="gallery-overlay">
-                                <h3>Main Restaurant</h3>
-                                <p>Fine dining experience with a panoramic view</p>
-                            </div>
-                        </div>
+            <!-- Simple Grid Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/golf-1.jpg" alt="Sea View Golf Course">
+                    <div class="gallery-overlay">
+                        <h3>Sea View Golf Course</h3>
+                        <p>One of the most scenic golf courses with breathtaking ocean views.</p>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/golf-2.jpg" alt="Oasis Golf Course">
+                    <div class="gallery-overlay">
+                        <h3>Oasis Golf Course</h3>
+                        <p>A world-class golf course set amidst stunning natural landscapes.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/academy.jpg" alt="Training Academy">
+                    <div class="gallery-overlay">
+                        <h3>Training Academy</h3>
+                        <p>A fully equipped training center featuring the latest technology.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/hotel.jpg" alt="Luxury Accommodation">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Accommodation</h3>
+                        <p>Elegant rooms and suites with stunning golf course views.</p>
+                    </div>
+                </div>
             </div>
+
             <div class="section-footer">
                 <a href="gallery.html" class="read-more-btn">
                     <span>View More Photos</span>

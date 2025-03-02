@@ -1,52 +1,44 @@
+<!-- 
+==================================================
+مشروع موقع منتجع الجولف - دليل للطلاب
+==================================================
+1. هذا ملف HTML أساسي لموقع منتجع جولف
+2. تم تنظيم الكود بشكل بسيط مع تعليقات توضيحية
+3. يمكنك تغيير الألوان والخطوط في ملف CSS
+4. الموقع يدعم اللغتين العربية والإنجليزية
+================================================== 
+-->
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
-    <!-- 
-    ================================================== 
-    Document Meta Tags
-    ================================================== 
-    -->
+    <!-- معلومات أساسية عن الصفحة -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="منتجع هول إن ون - تجربة جولف فاخرة مع ثلاثة ملاعب عالمية وخدمات متكاملة">
-    <meta name="keywords" content="جولف, منتجع, هول إن ون, ملاعب جولف, تدريب جولف, إقامة فاخرة">
+    <!-- وصف الموقع للمحركات البحث -->
+    <meta name="description" content="منتجع هول إن ون - تجربة جولف فاخرة مع ثلاثة ملاعب عالمية">
+    <meta name="keywords" content="جولف, منتجع, هول إن ون, ملاعب جولف">
     <meta name="author" content="Hole in One Resort">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#191a23">
 
     <title>منتجع هول إن ون | تجربة جولف استثنائية</title>
 
-    <!-- 
-    ================================================== 
-    Stylesheets
-    ================================================== 
-    -->
-    <!-- Favicon -->
+    <!-- أيقونة الموقع - يمكنك تغييرها بوضع صورة خاصة بك -->
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><defs><linearGradient id='a' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23B9FF66'/><stop offset='100%' style='stop-color:%234CAF50'/></linearGradient></defs><circle cx='256' cy='256' r='256' fill='%23191a23'/><g transform='translate(128 128)'><circle cx='128' cy='128' r='120' fill='white'/><path fill='url(%23a)' d='M128 8c66.274 0 120 53.726 120 120s-53.726 120-120 120S8 194.274 8 128 61.726 8 128 8zm0 20c-55.228 0-100 44.772-100 100s44.772 100 100 100 100-44.772 100-100-44.772-100-100-100zm30 50c0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30z'/><path fill='%23191a23' d='M158 78c0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30z' opacity='.15'/></g></svg>"
         type="image/svg+xml">
 
-    <!-- For iOS devices -->
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><defs><linearGradient id='a' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23B9FF66'/><stop offset='100%' style='stop-color:%234CAF50'/></linearGradient></defs><circle cx='90' cy='90' r='90' fill='%23191a23'/><g transform='translate(45 45)'><circle cx='45' cy='45' r='42' fill='white'/><path fill='url(%23a)' d='M45 3c23.196 0 42 18.804 42 42S68.196 87 45 87 3 68.196 3 45 21.804 3 45 3zm0 7c-19.33 0-35 15.67-35 35s15.67 35 35 35 35-15.67 35-35-15.67-35-35-35zm10.5 17.5c0 5.799-4.701 10.5-10.5 10.5-5.799 0-10.5-4.701-10.5-10.5 0-5.799 4.701-10.5 10.5-10.5 5.799 0 10.5 4.701 10.5 10.5z'/><path fill='%23191a23' d='M55.5 27.5c0 5.799-4.701 10.5-10.5 10.5-5.799 0-10.5-4.701-10.5-10.5 0-5.799 4.701-10.5 10.5-10.5 5.799 0 10.5 4.701 10.5 10.5z' opacity='.15'/></g></svg>">
-
-    <!-- For Android Chrome -->
-    <meta name="theme-color" content="#191a23">
-
-    <!-- Fonts -->
+    <!-- الخطوط - يمكنك تغيير الخط من هنا -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Third Party CSS -->
+    <!-- مكتبة الأيقونات -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- AOS Library -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> -->
-
-    <!-- Custom CSS -->
+    <!-- ملف CSS الخاص بالموقع -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Add in head section -->
@@ -64,32 +56,14 @@
 </head>
 
 <body data-scroll-container data-theme="light">
-    <!-- Floating Language Switch -->
-    <div class="floating-lang-switch">
-        <button class="floating-lang-btn" aria-label="Switch Language">
-            <div class="lang-icon">
-                <i class="fas fa-globe"></i>
-            </div>
-            <div class="lang-text">
-                <span class="current">AR</span>
-                <span class="divider">/</span>
-                <span class="target">EN</span>
-            </div>
-        </button>
-    </div>
+    <!-- زر تغيير اللغة -->
 
-    <!-- Custom Cursor
-     -->
 
-    <!-- 
-    ================================================== 
-    Main Content
-    ================================================== 
-    -->
+    <!-- القسم الرئيسي -->
     <div class="landing-page">
-        <!-- Navigation -->
+        <!-- شريط التنقل -->
         <nav class="navbar">
-            <!-- Logo -->
+            <!-- الشعار - يمكنك تغيير النص والأيقونة -->
             <a href="#" class="logo">
                 <div class="logo-container">
                     <i class="fas fa-golf-ball"></i>
@@ -97,13 +71,13 @@
                 </div>
             </a>
 
-            <!-- Mobile Menu Toggle -->
+            <!-- زر القائمة للهواتف -->
             <div class="menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars menu-icon"></i>
                 <i class="fas fa-times close-icon"></i>
             </div>
 
-            <!-- Navigation Links -->
+            <!-- روابط القائمة -->
             <ul class="nav-links">
                 <li><a href="about.html">من نحن</a></li>
                 <li><a href="services.html">خدماتنا</a></li>
@@ -119,7 +93,7 @@
             </ul>
         </nav>
 
-        <!-- Hero Section -->
+        <!-- قسم الترحيب -->
         <header class="header">
             <div class="header-content">
                 <h1 id="typed-text" data-translate="hero-title"></h1>
@@ -139,7 +113,7 @@
         </header>
     </div>
 
-    <!-- About Section -->
+    <!-- قسم من نحن -->
     <section id="about" class="about-section">
         <!-- Decorative Elements -->
         <div class="shapes-container">
@@ -159,7 +133,7 @@
                     من 25 عاماً من التميز في عالم الجولف.
                 </p>
 
-                <!-- Feature Cards -->
+                <!-- بطاقات المميزات -->
                 <div class="features-grid">
                     <div class="feature-card" data-tilt>
                         <div class="feature-icon">
@@ -192,7 +166,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- قسم الخدمات -->
     <section id="services" class="services-section">
         <!-- Background Decorations -->
         <div class="container">
@@ -203,7 +177,7 @@
             </div>
 
             <div class="services-grid">
-                <!-- Golf Courses -->
+                <!-- ملاعب الجولف -->
                 <div class="service-card" data-tilt>
                     <div class="card-content">
                         <div class="icon-wrapper">
@@ -225,7 +199,7 @@
                     </div>
                 </div>
 
-                <!-- Training Academy -->
+                <!-- أكاديمية التدريب -->
                 <div class="service-card featured" data-tilt>
                     <div class="card-content">
                         <div class="featured-badge">الأكثر طلباً</div>
@@ -248,7 +222,7 @@
                     </div>
                 </div>
 
-                <!-- Luxury Accommodation -->
+                <!-- الإقامة الفاخرة -->
                 <div class="service-card" data-tilt>
                     <div class="card-content">
                         <div class="icon-wrapper">
@@ -270,7 +244,7 @@
                     </div>
                 </div>
 
-                <!-- Pro Shop -->
+                <!-- متجر المحترفين -->
                 <div class="service-card" data-tilt>
                     <div class="card-content">
                         <div class="icon-wrapper">
@@ -310,59 +284,38 @@
                 <p class="subtitle">استكشف مرافقنا وملاعبنا من خلال هذه الجولة المصورة</p>
             </div>
 
-            <!-- Swiper Gallery -->
-            <div class="swiper gallery-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/golf-1.jpg" alt="ملعب سي فيو">
-                            <div class="gallery-overlay">
-                                <h3>ملعب سي فيو</h3>
-                                <p>أحد أجمل ملاعب الجولف المطلة على البحر</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/golf-2.jpg" alt="ملعب الواحة">
-                            <div class="gallery-overlay">
-                                <h3>ملعب الواحة</h3>
-                                <p>ملعب مصمم بمعايير عالمية وسط مناظر طبيعية خلابة</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/academy.jpg" alt="أكاديمية التدريب">
-                            <div class="gallery-overlay">
-                                <h3>أكاديمية التدريب</h3>
-                                <p>مركز تدريب متكامل مع أحدث التقنيات والمعدات</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/hotel.jpg" alt="الإقامة الفاخرة">
-                            <div class="gallery-overlay">
-                                <h3>الإقامة الفاخرة</h3>
-                                <p>غرف وأجنحة فاخرة بإطلالات مميزة على الملاعب</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <img src="./assets/images/gallery/restaurant.jpg" alt="المطعم الرئيسي">
-                            <div class="gallery-overlay">
-                                <h3>المطعم الرئيسي</h3>
-                                <p>تجربة طعام راقية مع إطلالة بانورامية</p>
-                            </div>
-                        </div>
+            <!-- Simple Grid Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/golf-1.jpg" alt="ملعب سي فيو">
+                    <div class="gallery-overlay">
+                        <h3>ملعب سي فيو</h3>
+                        <p>أحد أجمل ملاعب الجولف المطلة على البحر</p>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/golf-2.jpg" alt="ملعب الواحة">
+                    <div class="gallery-overlay">
+                        <h3>ملعب الواحة</h3>
+                        <p>ملعب مصمم بمعايير عالمية وسط مناظر طبيعية خلابة</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/academy.jpg" alt="أكاديمية التدريب">
+                    <div class="gallery-overlay">
+                        <h3>أكاديمية التدريب</h3>
+                        <p>مركز تدريب متكامل مع أحدث التقنيات والمعدات</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/images/gallery/hotel.jpg" alt="الإقامة الفاخرة">
+                    <div class="gallery-overlay">
+                        <h3>الإقامة الفاخرة</h3>
+                        <p>غرف وأجنحة فاخرة بإطلالات مميزة على الملاعب</p>
+                    </div>
+                </div>
             </div>
+
             <div class="section-footer">
                 <a href="gallery.html" class="read-more-btn">
                     <span>عرض المزيد من الصور</span>
@@ -464,7 +417,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- نموذج الاتصال -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
@@ -530,7 +483,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- تذييل الصفحة -->
     <footer class="footer">
         <div class="footer-content">
             <!-- Main Footer -->
@@ -627,7 +580,7 @@
         </div>
     </footer>
 
-    <!-- Go To Top Button -->
+    <!-- زر العودة للأعلى -->
     <button class="go-top-btn" aria-label="العودة إلى الأعلى">
         <i class="fas fa-chevron-up"></i>
         <div class="go-top-text">أعلى الصفحة</div>
