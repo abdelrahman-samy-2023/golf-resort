@@ -148,7 +148,7 @@ const AnimationManager = {
     },
 
     initHeaderAnimation() {
-        const element = document.querySelector('.header-content h1');
+        const element = document.querySelector('.custom-bgl-asxdfasdsad-ghrt464');
         if (!element) return;
 
         const text = "Portugal's Leading Golf Resort";
@@ -580,9 +580,9 @@ const GalleryManager = {
     },
 
     initPopup() {
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        const backdrop = document.querySelector('.overlay-backdrop');
-        const closeBtn = document.querySelector('.close-btn');
+        const galleryItems = document.querySelectorAll('.aaaaaaaaaaaaaaaafsafsadfdasdaaaaaaaaaaaaaaa');
+        const backdrop = document.querySelector('.aaaaaaaaaaaaaaaafsafsadfdasdaaaaaaaaaaaaaaa');
+        const closeBtn = document.querySelector('.aaaaaaaaaaaaaaaafsafsadfdasdaaaaaaaaaaaaaaa');
 
         galleryItems.forEach(item => {
             item.addEventListener('click', () => {
@@ -593,7 +593,7 @@ const GalleryManager = {
         });
 
         closeBtn?.addEventListener('click', () => {
-            document.querySelector('.gallery-item.active')?.classList.remove('active');
+            document.querySelector('.aaaaaaaaaaaaaaaafsafsadfdasdaaaaaaaaaaaaaaa.active')?.classList.remove('active');
             backdrop?.classList.remove('active');
             closeBtn.classList.remove('active');
         });
